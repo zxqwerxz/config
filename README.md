@@ -14,8 +14,8 @@ IDK if I had to do this or not. I can't really remember, but on my windows lapto
 
 #### Step 2. First install kernel headers and build tools: ####
 
-  sudo apt-get install build-essential module-assistant
-  sudo m-a prepare
+    sudo apt-get install build-essential module-assistant
+    sudo m-a prepare
 
 #### Step 3. Install guest-utils disk image.####
 
@@ -55,12 +55,19 @@ I choose make permanent and automatically mount
 
 #### Step 3: Add yourself to the vbox usergroup ####
 
-  sudo usermod -aG vboxsf <youruser>
+    sudo usermod -aG vboxsf <youruser>
   
 Then logout and log back in.
 
 #### Step 4: Set up symlink ####
 
+First check if the the shared folder mounting worked. Check:
 
+    ls /media
 
+You should see a directory that looks like: "sf_{directory_name}" which
+is the name of your shared folder.
 
+To create a symlink, in your home directory:
+
+    ln -s {/path/to/file-name} {link-name}
