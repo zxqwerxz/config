@@ -1,0 +1,21 @@
+# VBox Guest Utils
+sudo apt-get update
+sudo apt-get install build-essential module-assistant
+sudo m-a prepare
+sudo usermod -aG vboxsf jyzhou
+ln -s /media/sf_src/ src
+
+# Git
+sudo apt-get install git
+git config --global user.email "zhou.jeffrey.y@gmail.com"
+git config --global user.name "zxqwerxz"
+
+# General Programs
+sudo apt-get install vim emacs24
+sudo apt-get install r-base
+
+# Clone configurations
+cd ~/src
+git clone https://github.com/zxqwerxz/config.git
+
+
