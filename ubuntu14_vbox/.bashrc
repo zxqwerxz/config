@@ -115,6 +115,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/src
-source /usr/local/bin/virtualenvwrapper.sh
+export PATH=$PATH:/home/jyzhou/bin/sratoolkit.2.4.5-2-ubuntu64/bin
+
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/src
+#source /usr/local/bin/virtualenvwrapper.sh
