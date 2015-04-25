@@ -89,6 +89,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias emacs='emacs -nw'
+alias dj='./manage.py'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -113,3 +114,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
+source /usr/local/bin/virtualenvwrapper.sh
